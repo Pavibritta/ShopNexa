@@ -4,6 +4,9 @@ import coolingGlass from "../assets/Images/cooling glass.avif";
 import shoes from "../assets/Images/shoes.avif";
 import watch from "../assets/Images/watch.avif";
 import waterBottle from "../assets/Images/waterbottle.avif";
+import nike from "../assets/Images/nikeShoe.jpg";
+import smartWatch from "../assets/Images/smartWatch.avif";
+import headphones from "../assets/Images/headphones.avif";
 
 export const ProductContext = createContext();
 
@@ -18,19 +21,19 @@ const ProductList = ({ children }) => {
       id: 6,
       name: "Nike Shoes",
       price: 2999,
-      image: "https://via.placeholder.com/200",
+      image: nike,
     },
     {
       id: 7,
       name: "Smart Watch",
       price: 1999,
-      image: "https://via.placeholder.com/200",
+      image: smartWatch,
     },
     {
       id: 8,
       name: "Headphones",
       price: 1499,
-      image: "https://via.placeholder.com/200",
+      image: headphones,
     },
   ];
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SignIn = ({ onClose }) => {
+const SignIn = ({ onClose,onOpen }) => {
   const [formData, setFormData] = useState({ userName: "", password: "" });
   const [error, setError] = useState({});
 
@@ -15,6 +15,7 @@ const SignIn = ({ onClose }) => {
     } else {
       setError({});
       onClose();
+      onOpen()
     }
   };
   const handleChange = (e) => {

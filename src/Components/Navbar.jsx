@@ -85,10 +85,8 @@ const Navbar = () => {
 
       {openSignIn && (
         <SignIn
-          onClose={() => {
-            setOpenSignIn(false);
-            setOpenSignOut(true);
-          }}
+          onClose={() => setOpenSignIn(false)}
+          onOpen={() => setOpenSignOut(true)}
         />
       )}
     </>
